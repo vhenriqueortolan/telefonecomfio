@@ -1,0 +1,33 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.2"
+  },
+  "name": "telefone-com-fio",
+  "version": "1.0.0",
+  "description": "Website for design activism against fake news",
+  "main": "index.js",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "app": "node src/index.js",
+    "dev": "nodemon src/index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vhenriqueortolan/telefone-com-fio.git"
+  },
+  "keywords": [
+    "fake",
+    "news",
+    "design",
+    "activism"
+  ],
+  "author": "Victor Henrique Ortolan, Matheus Gerber",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vhenriqueortolan/telefone-com-fio/issues"
+  },
+  "homepage": "https://github.com/vhenriqueortolan/telefone-com-fio#readme"
+}
