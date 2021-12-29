@@ -11,7 +11,7 @@
     "nodemon": "^2.0.15"
   },
   "scripts": {
-    "app": "node src/index.js",
+    "start": "npm src/index.js",
     "dev": "nodemon src/index"
   },
   "repository": {
