@@ -4,6 +4,8 @@ const app = express()
 app.set('view engine', 'ejs')
 app.set('views', 'src/views');
 
+app.use(express.static(__dirname + '/public/'))
+
 const router = require('./controllers/routes.js')
 app.use('/', router)
 
