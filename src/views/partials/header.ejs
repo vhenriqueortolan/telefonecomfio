@@ -1,9 +1,15 @@
-<div>
+<div class="logo">
     <img src="images/logo-mobile.png" alt="logo telefone com fio"> 
 </div>
-<nav>
+<div onclick="abrirMenu()" class="menu" id="abrirMenu">
+    <div><a><img src="images/menu.png" alt="manu"></a></div>
+</div>
+<nav id='menu'>
     <a href="/">Inicio</a>
+    <a href="/">Galeria</a>
+    <a href="/">Minhas artes</a>
     <a href="/sobre">Sobre</a>
     <a href="/como-ajudar">Como ajudar</a>
     <a href="/contato">Contato</a>
+    <a onclick="fecharMenu()" class="close"><img src="images/close.png" alt="fechar"></a>
 </nav>

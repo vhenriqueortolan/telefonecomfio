@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <%- include("../partials/head"); %>
+    <link rel="stylesheet" href="css/home.css">
 <body>
     <header>
     <%- include("../partials/header"); %>
@@ -12,16 +13,19 @@
                 na informação<br>
                 que recebe?
             </h1>
-            <div class="redes-sociais">
-                <%- include("../partials/social-media"); %>
-            </div>
+            
+        </section>
+        <div class="text">
             <p>
-                A <span>Telefone Com Fio</span> é uma organização criada para combater a hegemonia da desinformação.
+                A <span>Telefone Com Fio</span> é uma organização criada para<br> combater a hegemonia da desinformação.
             </p>
             <p>
                 Acesse nossas redes e ajude a espalhar essa iniciativa!
             </p>
-        </section>
+        </div>
+        <div class="redes-sociais">
+            <%- include("../partials/social-media"); %>
+        </div>
     </main>
 </body>
 </html>

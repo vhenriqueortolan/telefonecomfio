@@ -1,0 +1,96 @@
+@media screen and (max-width: 989px) {
+nav > a:nth-child(1) {
+    background-color: #e0dcdb;
+    color: #bd1b30;
+    margin: 0;
+    padding: 1.2rem 0;
+    width: 85vw;
+}
+
+main {
+    margin-top: 5rem;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 3.5rem;
+    line-height: 1;
+}
+
+.text {
+    margin-top: 3.5rem;
+    border: .2rem solid #e0dcdb;
+    padding: 2rem;
+}
+
+p {
+    margin: 0;
+    font-size: 2rem;
+}
+
+p + p {
+    margin-top: 2.5rem;
+}
+
+.redes-sociais > a > img {
+    height: 2.75rem;
+    margin-left: 1.5rem;
+}
+
+.redes-sociais {
+    margin: 0 auto;
+    width: 15rem;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 2rem;
+}
+
+}
+
+
+@media screen and (min-width: 990px) {
+nav a:nth-child(1) {
+        color: #bd1b30;
+}
+    
+main {
+    margin-top: 8rem;
+}
+
+section {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+h1 {
+    margin: 0;
+    font-size: 6rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+
+.redes-sociais > a > img {
+    height: 2.75rem;
+    margin-left: 1.5rem;
+}
+
+.text {
+    margin-top: 3.5rem;
+    border: .2rem solid #e0dcdb;
+    padding: 2rem;
+}
+
+p {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+p + p {
+    margin-top: 2.5rem;
+}
+
+}
