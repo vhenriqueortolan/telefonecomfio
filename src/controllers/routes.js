@@ -17,4 +17,12 @@ router.get('/contato', function(req, res){
     res.render('pages/contato')
 })
 
+router.get('/registrar', function(req, res){
+    res.render('pages/registro')
+})
+
+router.get('/login', function(req, res){
+    res.render('pages/login')
+})
+
 module.exports = router
