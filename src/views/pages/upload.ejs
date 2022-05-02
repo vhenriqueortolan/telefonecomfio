@@ -9,13 +9,13 @@
         <%- include("../partials/header"); %>
     </header>
     <main>
-        <form action="">
-            <label for="nome">Nome</label>
-            <input id="nome" name="nome" type="text" placeholder="Seu nome" required>
-            <label for="email"></label>
-            <input type="email" name="email" placeholder="Seu email" required>
-            <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
-            <button type="submit">Enviar</button>
+        <h1>envie suas artes</h1>
+        <p>
+            Ou <span><a href="/registrar">clique aqui</a></span> para se registrar. 
+        </p>
+        <form class="login" method="post" action="/tocloud" enctype="multipart/form-data">
+            <input id="file" name="file" type="file" required>
+            <button type="submit">Entrar</button>
         </form>
     </main>
     <footer>

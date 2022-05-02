@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <%- include("../partials/head"); %>
+    <link rel="stylesheet" href="css/my-arts.css">
+</head>
+<body>
+    <header>
+        <%- include("../partials/header"); %>
+    </header>
+    <main>
+        <h1>galeria</h1>
+        <p>
+            Contribua com a nossa comunidade de designativistas, <span><a href="/registrar">clique aqui</a></span> para se registrar.
+        </p>
+    </main>
+    <section>
+        <% if (arts) { %>
+            <% arts.forEach((art) => { %>
+            <figure>
+                <img src="<%= art.art %>" alt="">
+                <figcaption>
+                    Artista: <%= art.user %> <br> 
+                    instagram: <%= art.instagram %>
+                </figcaption>
+            </figure>
+            <% }) %>
+        <% } %>
+    </section>
+    <footer>
+        <div class="redes-sociais">
+            <%- include("../partials/social-media"); %>
+        </div>
+    </footer>
+    
+</body>
+</html>

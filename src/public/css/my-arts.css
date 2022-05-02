@@ -20,8 +20,41 @@
         text-decoration: none;
     }
 
+    section {
+        display: flex;
+        justify-items : center;
+        flex-direction: column;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    section > img {
+        margin: 2rem auto;
+        max-width: 225px;
+    }
+
+    figure {
+        text-align: center;
+        margin: 1.5rem auto;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    figure > img {
+        max-width: 325px;
+        max-height: 225px;
+        margin: 0 auto;
+    }
+
+    figcaption {
+        background-color: rgb(248 18 46);
+        margin: 0;
+        padding: 1rem;
+    } 
+
     span > a:visited {
-        color: #bd1b30;
+        color: rgb(248 18 46);
     }
 
     .registro, .login {
@@ -108,10 +141,44 @@
 
     a {
         text-decoration: none;
+        color: rgb(248 18 46);
+    }
+
+    section {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    section > img {
+        max-width: 325px;
+        max-height: 225px;
+        margin: 2rem auto;
+    }
+    
+    figure {
+        text-align: center;
+        margin: 2rem auto;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    figure > img {
+        max-width: 325px;
+        max-height: 225px;
+        margin: 0 auto;
+    }
+
+    figcaption {
+        background-color: rgb(248 18 46);
+        margin: 0;
+        padding: 1rem;
     }
 
     span > a:visited {
-        color: #bd1b30;
+        color: rgb(248 18 46);
     }
 
     .registro, .login {

@@ -9,18 +9,23 @@
         <%- include("../partials/header"); %>
     </header>
     <main>
-        <h1 class="login">faça seu login</h1>
-        <form action="">
+        <h1>faça seu login</h1>
+        <p>
+            Ou <span><a href="/registrar">clique aqui</a></span> para se registrar. 
+        </p>
+        <form class="login" method="post" action="/auth">
             <label for="nome">Nome</label>
             <input id="email" name="email" type="text" placeholder="Seu email" required>
             <label for="email"></label>
             <input type="password" name="password" placeholder="Sua senha" required>
-            <button type="submit">Enviar</button>
+            <button type="submit">Entrar</button>
         </form>
     </main>
-    <div class="redes-sociais">
-        <%- include("../partials/social-media"); %>
-    </div>
+    <footer>
+        <div class="redes-sociais">
+            <%- include("../partials/social-media"); %>
+        </div>
+    </footer>
     
 </body>
 </html>

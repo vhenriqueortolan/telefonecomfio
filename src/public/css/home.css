@@ -72,6 +72,9 @@ h1 {
     line-height: 1;
 }
 
+.redes-sociais {
+    margin-top: 20px;
+}
 
 .redes-sociais > a > img {
     height: 2.75rem;

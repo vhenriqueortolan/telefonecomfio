@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <%- include("../partials/head"); %>
+    <link rel="stylesheet" href="css/my-arts.css">
+</head>
+<body>
+    <header>
+        <%- include("../partials/header"); %>
+    </header>
+    <main>
+        <h1>minhas artes</h1>
+        <p>
+            <% if (user) { %>
+              Olá, <span><%= user.name %></span>! <br>Aqui estão as artes que você já compartilhou conosco.
+            <% } %>
+        </p>
+        <p>
+            Para enviar novas artes você pode clicar <span><a href="/upload">aqui</a></span>.
+        </p>
+        <section>
+            <% if (user.images.length > 0) { %>
+                <% user.images.forEach((art) => { %>
+                <img src="<%= art %>" alt="">
+                <% }) %>
+            <% } %>
+        </section>
+    </main>
+    <footer>
+        <div class="redes-sociais">
+            <%- include("../partials/social-media"); %>
+        </div>
+    </footer>
+    
+</body>
+</html>

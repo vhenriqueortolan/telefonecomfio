@@ -9,19 +9,20 @@
         <%- include("../partials/header"); %>
     </header>
     <main>
-        <h1 class="registro">faça seu registro</h1>
-        <form action="">
-            <label for="nome">Nome</label>
-            <input id="nome" name="name" type="text" placeholder="Seu nome" required>
-            <label for="email"></label>
+        <h1>faça seu registro</h1>
+        <form class="registro" action="/confirm" method="post" >
+            <input id="name" name="name" type="text" placeholder="Seu nome" required>
             <input type="email" name="email" placeholder="Seu email" required>
+            <input type="text" name="instagram" placeholder="@ do seu instagram" required>
             <input type="password" name="password" placeholder="Digite uma senha" required>
-            <button type="submit">Enviar</button>
+            <button type="submit">Registrar</button>
         </form>
     </main>
-    <div class="redes-sociais">
-        <%- include("../partials/social-media"); %>
-    </div>
+    <footer>
+        <div class="redes-sociais">
+            <%- include("../partials/social-media"); %>
+        </div>
+    </footer>
     
 </body>
 </html>

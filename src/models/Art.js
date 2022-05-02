@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
-const User = new Schema({
+const Art = new Schema({
     name: {
         type: String,
         required: true
@@ -11,17 +11,12 @@ const User = new Schema({
         required: true
     },
     instagram: {
-        type: String,
-        default: this.name
+        type: String
     },
-    password: {
+    image: {
         type: String,
         required: true
-    },
-    images: {
-        type: Array,
-        default: []
     }
 })
 
-module.exports = mongoose.model('user', User)
+module.exports = mongoose.model('art', Art)

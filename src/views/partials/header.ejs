@@ -1,15 +1,29 @@
 <div class="logo">
     <img src="images/logo-mobile.png" alt="logo telefone com fio"> 
 </div>
-<div onclick="abrirMenu()" class="menu" id="abrirMenu">
+<div onclick="abrirMenu()" class="menu" id="abrirMenu" style="display: block;">
     <div><a><img src="images/menu.png" alt="manu"></a></div>
 </div>
-<nav id='menu'>
+<nav id='menu' style="display: none;">
     <a href="/">Inicio</a>
-    <a href="/">Galeria</a>
-    <a href="/">Minhas artes</a>
+    <a href="/galeria">Galeria</a>
+    <% if (user) { %>
+        <a href="/minhas-artes">Minhas artes</a>
+    <% } %>
     <a href="/sobre">Sobre</a>
     <a href="/como-ajudar">Como ajudar</a>
     <a href="/contato">Contato</a>
+    <% if (user) { %>
+        <a href="/sair">Sair</a>
+    <% } %>
+    <% if (!user) { %>
+        <a href="/login">Login</a>
+    <% } %>
     <a onclick="fecharMenu()" class="close"><img src="images/close.png" alt="fechar"></a>
 </nav>
+<% if (success) { %>
+    <div class="success"><%= success %></div>
+  <% } %>
+  <% if (error) { %>
+    <div class="error"><%= error %></div>
+  <% } %>
