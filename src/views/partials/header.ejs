@@ -1,10 +1,10 @@
 <div class="logo">
     <img src="images/logo-mobile.png" alt="logo telefone com fio"> 
 </div>
-<div onclick="abrirMenu()" class="menu" id="abrirMenu" style="display: block;">
+<div onclick="abrirMenu()" class="menu" id="abrirMenu" style="@media screen and (max-width: 989px) {display: block;} ">
     <div><a><img src="images/menu.png" alt="manu"></a></div>
 </div>
-<nav id='menu' style="display: none;">
+<nav id='menu' style="@media screen and (max-width: 989px) {display: none;}">
     <a href="/">Inicio</a>
     <a href="/galeria">Galeria</a>
     <% if (user) { %>
