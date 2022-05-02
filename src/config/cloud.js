@@ -7,11 +7,10 @@ const User = mongoose.model('user')
 const {saveArt} = require('../controllers/new-art')
 
 cloudinary.config({ 
-    cloud_name: 'vhenriqueortolan', 
-    api_key: '481683336767645', 
-    api_secret: 'f5rbrK7ooAtKFvM3m2tFP9fhzSo' 
+    cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+    api_key: process.env.CLOUDINARY_API_KEY, 
+    api_secret: process.env.CLOUDINARY_API_SECRET 
   });
-
 const toCloud = (req, res) => {
     if (!req.user){
         req.flash('error', 'Você precisa estar logado para enviar suas artes')
