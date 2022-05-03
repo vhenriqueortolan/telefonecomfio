@@ -1,3 +1,4 @@
+require('dotenv').config()
 const cloudinary = require('cloudinary').v2
 const { redirect } = require('express/lib/response');
 const mongoose = require('mongoose');

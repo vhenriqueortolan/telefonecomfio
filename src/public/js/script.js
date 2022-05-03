@@ -1,3 +1,12 @@
+if (window.matchMedia("(max-width: 989px)").matches) {
+    window.addEventListener('load', () => {
+        let button = document.getElementById('abrirMenu')
+        let menu = document.getElementById('menu')
+        button.style.display = 'block'
+        menu.style.display = 'none'
+    })
+}
+
 function abrirMenu() {
     let button = document.getElementById('abrirMenu')
     let menu = document.getElementById('menu')
